@@ -7,15 +7,12 @@ import Login from './pages/login';
 function App() {
   return (
     <div className='dark'>
-       <BrowserRouter>
-         <Routes>
-        <Route path='/home' element={<Home/>}/>
-        <Route path='/Login' element={<Login/>}/>
-        <Route path='/Register' element={<Register/>}/>
-        
-
-        
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/Login' element={<Login />} />
+          <Route exact path='/Register' element={<Register />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );
